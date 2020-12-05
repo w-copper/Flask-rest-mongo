@@ -1,4 +1,3 @@
-from app.models import Project, Device, Sensor
 from flask import abort
 from flask.views import MethodView
 from flask_restful import Resource, reqparse
