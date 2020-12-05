@@ -4,8 +4,9 @@ from flask import Flask
 from flask_mongoengine import MongoEngine
 from mongoengine import fields
 from flask_restful import Resource, Api
-from mix import *
+from flask_rest_mongo.mix import *
 import mongoengine
+
 class Config(object):
 
     ENV = 'development'
