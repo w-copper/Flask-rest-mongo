@@ -1,12 +1,17 @@
 from setuptools import Extension, dist, find_packages, setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setup(
-    name='flask-rest-mongo-CopperW',
-    version='0.1.0',
+    name='flask-rest-mongo',
+    version='0.1.1',
     description='Helper utils for mongoDB in flask use flask-rest',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/w-copper/Flask-rest-mongo.git",
     keywords='flask,mongoDB,restful',
-    packages=['flask-rest-mongo'],
+    packages=find_packages(),
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: Apache Software License',
@@ -19,7 +24,6 @@ setup(
     author='Wang Tong',
     author_email='copper.w@foxmail.com',
     install_requires=[
-        'json',
         'Flask',
         'flask-mongoengine',
         'mongoengine',

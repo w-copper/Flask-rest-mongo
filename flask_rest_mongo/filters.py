@@ -1,7 +1,8 @@
-from fields import parser_field
 
-from mongoengine.fields import *
 from flask_restful import reqparse
+from mongoengine.fields import *
+
+from .fields import parser_field
 
 NUMBER_FILTER = [
     'ne',
