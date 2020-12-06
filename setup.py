@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='flask-rest-mongo',
-    version='0.1.1',
+    version='0.1.2',
     description='Helper utils for mongoDB in flask use flask-rest',
     long_description=long_description,
     long_description_content_type="text/markdown",
